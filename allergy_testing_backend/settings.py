@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-h+ty8vy_^*6bzb56w9!1vpj$g5ri23+l2(w-8o#3j^qmlmu8%#"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-if os.getenv("DEV" == "True"): 
+if os.environ.get("DEV") == True: 
     DEBUG = True
 else:
     DEBUG = False
@@ -100,7 +100,7 @@ WSGI_APPLICATION = "allergy_testing_backend.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-if os.getenv("DEV") == "True":
+if os.environ.get("DEV") == True:
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.sqlite3",
