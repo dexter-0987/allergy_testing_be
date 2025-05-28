@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AddField(
-            model_nme="physician",
+            model_name="physician",
             name="user",
             field=models.OneToOneField(
                 default=1,
