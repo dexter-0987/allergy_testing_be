@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.pytest_cache/
+pip-log.txt
+pip-delete-this-arg-in-pip.log
+.python-version
+.vscode/ # VS Code specific settings/files
+
+# Django specific
+*.log
+*.sqlite3
+db.sqlite3
+/media/
+/static/ # If collectstatic outputs here and you serve it via web server
+/staticfiles/ # If you use a different name for collected static files
+
+# IDEs
+.idea/ # IntelliJ/PyCharm
+*.iml # IntelliJ/PyCharm
+.project
+.settings/
+.DS_Store # macOS specific
+
+# OS generated files
+.Trashes
+Thumbs.db
+
+# Docker
+# Docker Compose often uses a .env file, which should be ignored
+# However, if you explicitly copy .env into your Dockerfile,
+# you might remove it from .dockerignore, but keep it here for Git.
+# If you explicitly copied .env into the image, then you'd want to keep it here.
+# For now, assuming you don't want to commit it.
+# .env # Already listed above for Python, but emphasizing for Docker context
+
+# Build artifacts
+/build/
+/dist/
+*.egg-info/
+.coverage
+.tox/
+
+# npm/yarn (if frontend is in the same repo)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
